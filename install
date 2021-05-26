@@ -1,5 +1,6 @@
 #!/bin/sh
 set -eu
+mkdir /opt
 INSTALL_DIR=/opt/soft-hwclock
 cd $(dirname "$0")
 mkdir "$INSTALL_DIR" || true
