@@ -4,7 +4,7 @@
 # This format sorts lexicographically
 
 CLOCKFILE="/opt/soft-hwclock/soft-hwclock.data"
-CTIME=$(date --rfc-3339=seconds)
+CTIME=$(date +'%Y-%m-%d %H:%M:%S')
 FTIME=$(test -f "${CLOCKFILE}" && cat "${CLOCKFILE}")
 
 # if the file time is in the future, use that
